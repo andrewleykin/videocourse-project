@@ -1,6 +1,6 @@
 module.exports = function () {
     $.gulp.task('watch', function () {
-        $.gulp.watch('./dev/pug/**/*.pug', $.gulp.series('pug'));
+        $.gulp.watch('./dev/html/**/*.html', $.gulp.series('html'));
         $.gulp.watch('./dev/static/stylus/**/*.styl', $.gulp.series('styles:dev'));
         $.gulp.watch('./dev/static/img/svg/*.svg', $.gulp.series('svg'));
         $.gulp.watch('./dev/static/js/**/*.js', $.gulp.series('libsJS:dev', 'js:copy'));
